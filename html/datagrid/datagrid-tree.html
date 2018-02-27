@@ -41,9 +41,9 @@ function datagrid_tree_beforeDrop(data, targetData, position) {
         showToolbar: true,
         toolbarItem:'add, cancel, del, save',
         local: 'local',
-        dataUrl: '../../json/datagrid/datagrid-tree.json',
+        dataUrl: 'json/datagrid/datagrid-tree.json',
         inlineEditMult: false,
-        editUrl: '../../json/ajaxDone.json',
+        editUrl: 'json/ajaxDone.json',
         isTree: 'name',
         addLocation: 'last',
         fieldSortable: false,
@@ -60,7 +60,7 @@ function datagrid_tree_beforeDrop(data, targetData, position) {
         dropOptions: {
             drop: true,
             position: 'before',
-            dropUrl: '../../json/ajaxDone.json',
+            dropUrl: 'json/ajaxDone.json',
             beforeDrag: datagrid_tree_beforeDrag,
             beforeDrop: datagrid_tree_beforeDrop,
             afterDrop: 'array'
